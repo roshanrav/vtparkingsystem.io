@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Project 1 - [Page Title]</title>
+  <title>Project 1 - Hokie Parking System Architecture</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
@@ -15,17 +15,30 @@
 </head>
 
 <body>
-  <div class="menu-container"></div> <!-- Menu will be dynamically added here -->
+  <div class="menu-container"></div>
 
   <div class="content-container">
     <div class="content">
       <div class="content-table flex-column">
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2>[Page Title]</h2>
+
+            <h2>Design Rationale</h2>
             <p class="text">
-              <!-- Content specific to this page goes here -->
-              [Replace this placeholder text with content for this section, e.g., background, use cases, etc.]
+              The design of the Hokie Parking System is rooted in the need to address limitations in the current parking solutions on Virginia Tech’s campus. With over 38,000 students and 2,500 faculty members, the campus demands an efficient and reliable parking management system that enhances the overall campus experience. The proposed system integrates real-time data such as space availability, reservation functionality, and administrative analytics to provide a user-centered and efficient parking solution.
+            </p>
+            <p class="text">
+              Our design choices were specifically made to address concerns for our two largest stakeholders – drivers and parking administrators on campus.
+            </p>
+
+            <h3>Driver Design Rationale</h3>
+            <p class="text">
+              Our simple design enables drivers to quickly identify open parking spots, reserve them, and pay for parking. This solves the most common pain-point for most drivers on campus who are unaware of where or how to park, given the decentralized nature of parking information and policies on campus. Eliminating different parking methods depending on location and creating the ability for drivers to reserve parking eliminates much of the stress associated with parking on campus, particularly during weekdays. We wanted to ensure that our system is easy to use and understand, with minimal information stored on the user, to protect privacy and promote speed within our application.
+            </p>
+
+            <h3>Administrator Design Rationale</h3>
+            <p class="text">
+              Our design for administrators was centered on providing them with the most important information upfront, while providing them optionality to dive deeper into the data if desired. A key goal was to provide parking administrators with important information in real time, such as real-time views of parking congestion on campus to help in directing traffic during high-capacity events or tracking parking payments for system users. Our system provides a simple approach to getting key insights, while also giving the optionality to dive further into the data to understand trends within campus parking.
             </p>
           </div>
         </div>
@@ -33,22 +46,5 @@
     </div>
   </div>
 </body>
-
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-  ga('create', 'UA-10682694-20', 'auto');
-  ga('send', 'pageview');
-</script>
 
 </html>

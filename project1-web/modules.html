@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Project 1 - [Page Title]</title>
+  <title>Project 1 - Hokie Parking System Architecture</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
@@ -15,18 +15,119 @@
 </head>
 
 <body>
-  <div class="menu-container"></div> <!-- Menu will be dynamically added here -->
+  <div class="menu-container"></div> 
 
   <div class="content-container">
     <div class="content">
       <div class="content-table flex-column">
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2>[Page Title]</h2>
+            <h2>Modules</h2>
             <p class="text">
-              <!-- Content specific to this page goes here -->
-              [Replace this placeholder text with content for this section, e.g., background, use cases, etc.]
+              1. Real-Time Data Module (Design ID 1) <br>
+              2. Reservation and Payment Module (Design ID 2) <br>
+              3. Analytics and Administration Module (Design ID 3)
             </p>
+            <figure>
+              <img src="images/fig3.png" alt="Module Overview of Hokie Parking System" style="width:600px; height:auto; max-width:100%; border:1px solid #ccc;">
+              <figcaption>Figure 3: Module Overview of Hokie Parking System</figcaption>
+            </figure>
+            <h3>A summary of Hokie Parking System’s high-level module view is described below.</h3>
+            <h3>1. Real-Time Data Module</h3>
+            <figure>
+              <img src="images/id1pic.png" alt="Real-Time Data Module Image" style="width:600px; height:auto; max-width:100%; border:1px solid #ccc;">
+            </figure>
+            <p class="text">
+              The Real-Time Data Module is responsible for continuously collecting, processing, and displaying real-time parking availability information. It gathers data from parking sensors that are distributed in different parking lots. This module employs Process Control Architecture, handling data flow from sensors and updating the availability status in real time for display to users. Allowing availability information to be displayed dynamically for users of the system enables them to effectively locate available parking spots in a fraction of the time needed previously.
+            </p>
+            <h3>2. Reservation and Payment Module</h3>
+            <figure>
+              <img src="images/id2pic.png" alt="Reservation and Payment Module Image" style="width:600px; height:auto; max-width:100%; border:1px solid #ccc;">
+            </figure>
+            <p class="text">
+              The Reservation and Payment Module allows drivers to reserve parking spots and pay electronically. The module contains secure infrastructure through a gateway to maintain a safe environment for financial transactions. In addition, notifications are configured to work within the system to inform users of current reservation status, confirmation of payments, and any parking or payment cancellations in real time.
+            </p>
+            <h3>3. Analytics and Administration Module</h3>
+            <figure>
+              <img src="images/id3pic.png" alt="Analytics and Administration Module Image" style="width:600px; height:auto; max-width:100%; border:1px solid #ccc;">
+            </figure>
+            <p class="text">
+              The Analytics and Administration Module allows parking administrators to overview current parking status and overall data analysis of the parking system. This module aggregates data on parking patterns, peak times, and ticket frequency to better allow for resource and personnel allocation to handle day to day parking needs of drivers on campus. The interface is user-friendly and easy to navigate for ease of use by administration, with the ability to adjust visible metrics depending on what is needed at any moment.
+            </p>
+
+            <h3>Traceability Matrix</h3>
+            <table border="1" cellpadding="5" cellspacing="0" style="width:100%; border-collapse:collapse;">
+              <thead>
+                <tr>
+                  <th>Requirement ID</th>
+                  <th>Design ID</th>
+                  <th>Requirement Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>FR-1</td>
+                  <td>1</td>
+                  <td>Functional</td>
+                </tr>
+                <tr>
+                  <td>FR-2</td>
+                  <td>1</td>
+                  <td>Functional</td>
+                </tr>
+                <tr>
+                  <td>FR-3</td>
+                  <td>2</td>
+                  <td>Functional</td>
+                </tr>
+                <tr>
+                  <td>FR-4</td>
+                  <td>2</td>
+                  <td>Functional</td>
+                </tr>
+                <tr>
+                  <td>FR-5</td>
+                  <td>2</td>
+                  <td>Functional</td>
+                </tr>
+                <tr>
+                  <td>FR-6</td>
+                  <td>3</td>
+                  <td>Functional</td>
+                </tr>
+                <tr>
+                  <td>FR-7</td>
+                  <td>3</td>
+                  <td>Functional</td>
+                </tr>
+                <tr>
+                  <td>NFR-1</td>
+                  <td>1</td>
+                  <td>Non-functional</td>
+                </tr>
+                <tr>
+                  <td>NFR-2</td>
+                  <td>1</td>
+                  <td>Non-functional</td>
+                </tr>
+                <tr>
+                  <td>NFR-3</td>
+                  <td>2</td>
+                  <td>Non-functional</td>
+                </tr>
+                <tr>
+                  <td>NFR-4</td>
+                  <td>2</td>
+                  <td>Non-functional</td>
+                </tr>
+                <tr>
+                  <td>NFR-5</td>
+                  <td>3</td>
+                  <td>Non-functional</td>
+                </tr>
+              </tbody>
+            </table>
+
           </div>
         </div>
       </div>
@@ -34,21 +135,5 @@
   </div>
 </body>
 
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-  ga('create', 'UA-10682694-20', 'auto');
-  ga('send', 'pageview');
-</script>
 
 </html>
