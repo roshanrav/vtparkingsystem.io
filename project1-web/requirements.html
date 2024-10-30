@@ -1,9 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Project 1 - [Page Title]</title>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1 - Requirements</title>
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
@@ -22,11 +23,31 @@
       <div class="content-table flex-column">
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2>[Page Title]</h2>
-            <p class="text">
-              <!-- Content specific to this page goes here -->
-              [Replace this placeholder text with content for this section, e.g., background, use cases, etc.]
-            </p>
+            <h2>Requirements</h2>
+            
+            <section class="functional-requirements">
+              <h3>Functional Requirements</h3>
+              <ul>
+                <li>FR-1: The system must support the ability to display real-time availability of parking spots on campus for drivers.</li>
+                <li>FR-2: The system must support the ability to display real-time availability of off-campus parking spots during peak times when no spots are available on campus.</li>
+                <li>FR-3: The system must support the ability to allow drivers to reserve a parking space in advance, with their desired time and location.</li>
+                <li>FR-4: The system must support the ability to provide filtering options for drivers, allowing them to search for parking spots based on location, price, distance to a specific building, or spot size.</li>
+                <li>FR-5: The system must support the ability to allow drivers to rate and leave comments on each parking location.</li>
+                <li>FR-6: The system must support the ability to generate personalized recommendations for parking spots based on previous user ratings and comments.</li>
+                <li>FR-7: The system must support the ability to provide operators with a weekly analysis summary of parking usage, highlighting trends and occupancy rates.</li>
+              </ul>
+            </section>
+            
+            <section class="non-functional-requirements">
+              <h3>Non-Functional Requirements</h3>
+              <ul>
+                <li>NFR-1: The system shall update parking availability in real-time with a maximum delay of 5 seconds.</li>
+                <li>NFR-2: The system shall be in full operating mode within two seconds of the application being turned on.</li>
+                <li>NFR-3: The system shall provide filtering and search results within two seconds.</li>
+                <li>NFR-4: The system shall maintain a weekly uptime of 99.9%, ensuring high reliability for users and operators.</li>
+                <li>NFR-5: The system shall generate the weekly analysis summary in a format that is accessible and easy to understand for operators, such as charts or visual summaries.</li>
+              </ul>
+            </section>
           </div>
         </div>
       </div>
